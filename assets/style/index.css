@@ -1,0 +1,96 @@
+@import "./reset.css";
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: min(100% - 30px, 1080);
+    margin-inline: auto;
+}
+
+.flexbox{
+    display: flex;
+}
+
+.invis{
+    display: none;
+}
+
+body{
+    background-color: #f7fdf6;
+}
+
+.txt{
+    margin-top: 140px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(0, 26, 23);
+}
+
+main{
+    min-width: 100%;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    background-color: #f7fdf6;
+}
+
+.map{
+    width: 50%;
+    height: 300px;
+}
+
+.overlay{
+    width: 50%;
+    height: 300px;
+    background-color: #EDF6F9;
+    position: fixed;
+} 
+
+.load {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+    margin-top: calc(50% - 300px);
+    margin-left: calc(50% - 30px);
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.banner{
+    background: #fff url(../img/banner.jpg) center center / cover no-repeat fixed;
+    width: 100%;
+    height: calc(100vh - 82px); 
+}
+
+.banner-text{
+    position: relative;
+    color: #fff;
+    background-color: rgba(0,0,0, .3); 
+    font-size: 60px;
+    width: 100%;
+    height: calc(100vh - 82px);
+}
+
+header{
+    width: 100%;
+    height: 82px;
+    font-size: 16px;
+    line-height: 82px;
+    text-align: center;
+    background-color: #BAD9B5;
+}
+
+
+.text{
+    width: 50%;
+    height: 100px;
+}
